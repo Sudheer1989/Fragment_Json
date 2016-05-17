@@ -29,6 +29,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
 //declare all fields
+
     ArrayList<Contacts> al;
     MyAdapter adp;
     ListView lv;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+        //Changed the line
 
 // STEP 1: INTIALIZE ALL VARAIBLES
         btn= (Button) findViewById(R.id.button);
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(Void... params) {
-            HttpURLConnection  con=null;
+            HttpURLConnection  con;
             //sTEP 3 CREATE URL CONNECCTION AND IMPEETS TRY CATCH ....AS..
             try{
                 URL url  = new URL("http://api.androidhive.info/contacts/");
